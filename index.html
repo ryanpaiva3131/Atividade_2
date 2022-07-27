@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Forumlário Fórum de Games </title>
+        <meta charset="utf-8"/>
+    </head>
+
+    <body background="./img/background.gif" text="black">
+
+        <table align="center" bgcolor="black" border="1">
+            <tr><td>
+            <font color="#00FFFF"><h2> Cadastro de Usuário em Fórum de Games </h2></font>
+            </td></tr>
+        </table>
+        
+        <br/>
+
+        <table align="center" border="0" width="550" bgcolor="black">
+            <tr><td>
+
+        <fieldset>
+            
+            <legend align="center"> <font color="#00FFFF">Informe seus Dados</font> </legend>
+            <form action="#" method="post" name="cadastro">
+
+                <table align="center" cellspacing="5" cellpadding="5" bgcolor="white" width="525">
+                <tr>
+                    <td>
+                <label> Id: </label>
+                    </td>
+                    <td>
+                    <input type="text" id="id" name="id" size="30" maxlength="40" placeholder="Digite um nome de usuário" required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                <label> Email: </label>
+                    </td>
+                    <td>
+                    <input type="email" id="email" name="email" size="30" maxlength="50" placeholder="Digite seu email" required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                <label> Senha: </label>
+                    </td>
+                    <td>
+                    <input type="password" id="senha" name="senha" size="30" maxlength="20" placeholder="Digite sua senha" required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                <label> Sexo: </label>
+                    </td>
+                    <td>
+                    <label> <input type="radio" id="sexo" name="sexo" value="M" required/> Masculino </label>
+
+                    <label> <input type="radio" id="sexo" name="sexo" value="F" required/> Feminino </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                <label> Data de Nascimento: </label>
+                    </td>
+                    <td>
+                    <input type="date" id="data_nasc" name="data_nasc" min="1950-01-01" max="2006-07-31" required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                <label> Imagem de Perfil </label>
+                    </td>
+                    <td>
+                    <input type="file" id="perfil" name="perfil" required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                <label> Borda do Perfil </label>
+                    </td>
+                    <td>
+                    <input type="color" id="cor" name="cor" required/>
+                    </td>
+                </tr>
+
+            </form>
+            </table>
+        </fieldset>
+
+            </td></tr>
+        </table>
+
+        <br/>
+
+        <table align="center" border="0" width="550" bgcolor="black">
+            <tr><td>
+
+        <fieldset>
+            
+            <legend align="center"> <font color="#00FFFF">Preferências do Usuário</font> </legend>
+            <form action="#" method="post" name="preferencia">
+
+                <table align="center" cellspacing="5" cellpadding="5" bgcolor="white" width="525">
+
+                <tr>
+                    <td>
+                <label> Selecione seu console: </label>
+                    </td>
+                    <td>
+                <label>
+                    <input type="radio" name="model" value="1">
+                    <img src="./img/xbox.jpg" alt="xbox" width="50">
+                    <label> Xbox One<font color="white">___</font> </label>
+                </label>
+                
+                <label>
+                    <input type="radio" name="model" value="2">
+                    <img src="./img/ps4.webp" alt="ps4" width="50">
+                    <label> PS4 </label>
+                </label>
+                <br/>
+                <label>
+                    <input type="radio" name="model" value="2">
+                    <img src="./img/xbox_x.jpg" alt="xbox_x" width="50">
+                    <label> Xbox OneX <font color="white">_</font></label>
+                </label>
+                
+                <label>
+                    <input type="radio" name="model" value="2">
+                    <img src="./img/ps5.webp" alt="ps5" width="50">
+                    <label> PS5 </label>
+                </label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                <label> Escolha o seu jogo favorito: </label>
+                    </td>
+                    <td>
+                <input type="text" list="games" />
+                    <datalist id="games">
+                        <option>Super Mario Galaxy 2</option>
+                        <option>The Legend of Zelda: Breath of the Wild</option>
+                        <option>Red Dead Redemption 2</option>
+                        <option>Grand Theft Auto V</option>
+                        <option>Super Mario Odyssey</option>
+                        <option>Mass Effect 2</option>
+                        <option>The Elder Scrolls V: Skyrim</option>
+                        <option>The Last of Us</option>
+                        <option>The Last of Us Remastered</option>
+                        <option>Red Dead Redemption</option>
+                        <option>Portal 2</option>
+                        <option>God of War</option>
+                        <option>Batman: Arkham City</option>
+                        <option>The Legend of Zelda: Ocarina of Time 3D</option>
+                        <option>BioShock Infinite</option>
+                        <option>Pac-Man Championship Edition DX</option>
+                        <option>Divinity: Original Sin II</option>
+                        <option>Super Mario 3D World</option>
+                        <option>StarCraft II: Wings of Liberty</option>
+                        <option>Minecraft</option>
+                        <option>Persona 4 Golden</option>
+                        <option>Persona 5</option>
+                        <option>Mass Effect 3</option>
+                        <option>Metal Gear Solid V: The Phantom Pain</option>
+                        <option>The Legend of Zelda: Skyward Sword</option>
+                        <option>Rock Band 3</option>
+                        <option>Uncharted 4: A Thief's End</option>
+                        <option>Super Smash Bros. Ultimate</option>
+                        <option>Inside</option>
+                        <option>Forza Horizon 4</option>
+                        <option>God of War III</option>
+                        <option>Uncharted 3: Drake's Deception</option>
+                        <option>Bloodborne</option>
+                        <option>Celeste	Switch</option>
+                        <option>Super Street Fighter IV</option>
+                        <option>The Witcher 3: Wild Hunt</option>
+                        <option>Undertale</option>
+                        <option>Fire Emblem: Awakening</option>
+                        <option>Divinity: Original Sin II Definitive Edition</option>
+                        <option>Super Smash Bros. for Wii U</option>
+                        <option>Journey	PlayStation</option>
+                        <option>Xenoblade Chronicles</option>
+                        <option>Mario Kart 8 Deluxe</option>
+                        <option>The ICO & Shadow of the Colossus Collection</option>
+                        <option>The Witcher 3: Wild Hunt: Blood and Wine</option>
+                        <option>LittleBigPlanet 2</option>
+                        <option>Overwatch</option>
+                        <option>Bayonetta 2</option>
+                        <option>Forza Horizon 3</option>
+                        <option>Final Fantasy XIV: Shadowbringers</option>
+                        <option></option>
+                        <option></option>
+                    </datalist>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                <label> Informe quantas horas você joga por dia: </label>
+                    </td>
+                    <td>
+                <input class type="range" list="tickmarks" min="1" max="8" step="1">
+                <label> (1 a 8) </label>
+
+                    <datalist id="tickmarks">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    </datalist>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    <label> Sobre mim: </label>
+                    
+                    </td>
+                    <td>
+
+                    <textarea id="sobre" name="sobre" cols="40" rows="10" maxlength="500" placeholder="Digite no (Máximo 500 Caracteres)"></textarea>
+                    
+                    </td>
+                </tr>
+
+                    <tr>
+                        <td colspan="2">
+                    <button type="submit" id="send" name="send">
+                        <img src="./img/send_icon.jpg" width="20" height="20" alt="send"/>
+                    </button>
+
+                    <button type="reset" id="send" name="send">
+                        <img src="./img/clean-icon-0.jpg" width="20" height="20" alt="clean"/>
+                    </button>
+                        </td>
+                    </tr>
+                </td></tr>
+        </table>
+            </form>
+        </fieldset>
+
+            </td></tr>
+        </table>
+
+
+    </body>
